@@ -8,7 +8,7 @@
     "dev": "nodemon server.js"
   },
   "keywords": [
-    "trustlens",
+    "trustlens  ",
     "mern",
     "scam-detection",
     "express",

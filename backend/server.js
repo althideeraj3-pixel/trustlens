@@ -66,23 +66,35 @@ app.use('/api/admin', require('./routes/adminRoutes'));
 // Global Error Handler Middleware
 app.use(errorHandler);
 
-// Define Port
-const PORT = process.env.PORT || 5000;
+const PORT = Number.parseInt(process.env.PORT || '5000', 10);
 
-// Start Server & Connect Database
-const startServer = async () => {
-  try {
-    const conn = await connectDB();
-    if (conn) {
-      await ensureDefaultAccounts();
-    }
-
-    app.listen(PORT, () => {
-      console.log(`🛡️ TrustLens server running on http://localhost:${PORT}`);
-    });
-  } catch (error) {
-    console.error('Server startup failed:', error);
+const startServer = async (port = PORT) => {
+  const conn = await connectDB();
+  if (conn) {
+    await ensureDefaultAccounts();
   }
+
+  return new Promise((resolve, reject) => {
+    const server = app.listen(port, () => {
+      console.log(`🛡️ TrustLens server running on http://localhost:${port}`);
+      resolve(server);
+    });
+
+    server.once('error', (error) => {
+      if (error.code === 'EADDRINUSE') {
+        console.error(`Cannot start TrustLens: port ${port} is already in use.`);
+      } else {
+        console.error(`Cannot start TrustLens: ${error.code || 'server error'}.`);
+      }
+      reject(error);
+    });
+  });
 };
 
-startServer();
+if (require.main === module) {
+  startServer().catch(() => {
+    process.exitCode = 1;
+  });
+}
+
+module.exports = { app, startServer };
