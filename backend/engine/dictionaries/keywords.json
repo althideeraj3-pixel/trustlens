@@ -1,0 +1,40 @@
+{
+  "urgency": {
+    "en": ["immediately", "urgent", "last chance", "blocked", "suspended", "expire", "action required", "within 24 hours", "account deactivated", "final notice"],
+    "te": ["వెంటనే", "ఆఖరి అవకాశం", "బ్లాక్ చేయబడుతుంది", "రద్దు", "తక్షణమే", "గడువు ముగిసింది"],
+    "hi": ["तुरंत", "अंतिम अवसर", "अकाउंट ब्लॉक", "निलंबित", "कार्रवाई आवश्यक", "अंतिम चेतावनी"]
+  },
+  "rewards": {
+    "en": ["congratulations", "won", "lottery", "cashback", "reward", "prize", "free gift", "claimed ₹", "bonus credited", "lucky draw"],
+    "te": ["అభినందనలు", "బహుమతి", "లాటరీ", "గెలుచుకున్నారు", "క్యాష్‌బ్యాక్", "ఉచిత కానుక"],
+    "hi": ["बधाई", "इनाम", "लॉटरी", "कैशबैक", "जीता", "मुफ्त उपहार", "लकी ड्रा"]
+  },
+  "payments": {
+    "en": ["processing fee", "registration fee", "transfer charges", "deposit amount", "pay ₹", "send money to claim", "refundable deposit"],
+    "te": ["ప్రాసెసింగ్ రుసుము", "రిజిస్ట్రేషన్ ఫీజు", "డిపాజిట్", "డబ్బు పంపండి"],
+    "hi": ["प्रोसेसिंग फीस", "रजिस्ट्रेशन शुल्क", "डिपॉजिट", "पैसे भेजें", "रिफंडेबल डिपॉजिट"]
+  },
+  "impersonation": {
+    "en": ["sbi", "hdfc", "icici", "axis bank", "punjab national bank", "india post", "electricity bill", "power discom", "police", "customs", "income tax department", "courier delivery", "fedex", "bluedart", "jio", "airtel"],
+    "te": ["ఎస్బీఐ", "బ్యాంక్", "ఇండియా పోస్ట్", "విద్యుత్ బిల్లు", "పోలీస్", "జియో", "ఎయిర్‌టెల్"],
+    "hi": ["एसबीआई", "बैंक", "इंडिया पोस्ट", "बिजली बिल", "पुलिस", "कस्टम विभाग", "आयकर विभाग", "जियो", "एयरटेल"]
+  },
+  "criticalData": {
+    "en": ["otp", "one time password", "pin", "upi pin", "password", "netbanking password", "cvv", "atm pin"],
+    "te": ["ఓటీపీ", "పిన్", "పాస్‌వర్డ్", "యూపీఐ పిన్"],
+    "hi": ["ओटीपी", "पिन", "पासवर्ड", "यूपीआई पिन", "सीवीवी"]
+  },
+  "highSensitivityData": {
+    "en": ["aadhaar", "aadhar", "pan card", "pan number", "bank account", "account number", "credit card", "debit card"],
+    "te": ["ఆధార్", "పాన్ కార్డ్", "బ్యాంక్ ఖాతా సంఖ్య"],
+    "hi": ["आधार", "पैन कार्ड", "बैंक खाता", "खाता संख्या"]
+  },
+  "cautionData": {
+    "en": ["phone number", "mobile number", "email address", "date of birth", "dob"],
+    "te": ["ఫోన్ నంబర్", "ఈమెయిల్", "పుట్టిన తేదీ"],
+    "hi": ["फोन नंबर", "ईमेल", "जन्म तिथि"]
+  },
+  "shorteners": [
+    "bit.ly", "tinyurl.com", "t.co", "is.gd", "buff.ly", "ow.ly", "rb.gy", "cutt.ly", "shorturl.at"
+  ]
+}
